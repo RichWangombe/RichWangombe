@@ -1,0 +1,93 @@
+/*@TODO (6) : Specify what each selector and property-value pair does and means*/
+
+/* Allows us to include the padding and
+the border in the element's total width and height */
+html {
+  box-sizing: border-box;
+}
+
+/*Used to select pseudoelements,
+ improving the effect of the border-box  */
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/*Font family specifies the georgia,
+ serif font for the body element. line-height specifies the height
+ of the content to 1.5  */
+body {
+  font-family: Georgia, serif;
+  line-height: 1.5em;
+}
+
+/*
+Specifies the font-size of the h1 element to 4 and the font-weight
+element to to normal  */
+h1 {
+  font-size: 4em;
+  font-weight: normal;
+}
+
+/* Specifies the font-size of h2 element to 1.2 and the margin-top
+ property to 0*/
+h2 {
+  font-size: 1.2em;
+  margin-top: 0;
+}
+
+/*Turns the div into a flexbox with a solid border border of 3 pixels,
+and also makes the flexbox items wrap if necessary*/
+#menu {
+  display:flex;
+  border: 3px solid #783F27;
+  flex-wrap: wrap;
+}
+
+/*Specifies a background color for the section element,
+sets its margin to 20 pixels, it's padding to 20 pixels,its border
+at 1 pixel, dotted style and maroon, while its width is 255 pixels */
+section {
+  background: #F6F3ED;
+  margin: 10px;
+  padding: 20px;
+  border: 1px dotted maroon;
+  width: 255px;
+}
+
+/*Sets the color of the title and its background
+ as well as the height of the line.It also sets the background-color
+ for the title class, calls on an image. */
+.title {
+background-image: url("images/specials.jpg");
+height: 500px;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+position: relative;
+background-color: #783F27;
+color: #F9AB33;
+line-height: 4em;
+
+}
+
+/*Sets the font-weight to bold, it's background color,
+the padding to 5 pixels, width to 100% and laligns the text to the
+center position*/
+.price {
+  align-items: flex-end;
+  font-weight: bold;
+  background: #F9AB33;
+  padding: 5px;
+  width: 100%;
+/ text-align: center;
+}
+
+/*Gives the images a solid border of 1 pixel,
+a border-radius of 4 pixels and a padding of 5 pixels,
+and a width of 215 pixels */
+.photo {
+border: 1px solid #92a8d1;
+border-radius: 4px;
+padding: 5px;
+width: 215px;
+}
