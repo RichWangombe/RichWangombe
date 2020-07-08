@@ -1,0 +1,33 @@
+/*
+@TODO : Add styles here
+
+  Detals;
+  1. Add Merienda Google font
+
+*/
+
+@import url(https://fonts.googleapis.com/css?family=Merienda:400,500&subset=latin,latin-ext);
+
+  html, body {
+    font-family: 'Roboto', sans-serif;
+  }
+
+  #app {
+    header {
+      text-align: center;
+    }
+  }
+
+  main {
+    .result {
+      font-size: 16pt;
+      text-align: center;
+      margin-top: 10px;
+      span, em {
+        display: block;
+      }
+      em {
+        font-size: 2em;
+      }
+    }
+  }

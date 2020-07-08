@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>I-W-C</title>
+
+    <!-- @TODO : Add favicon -->
+    <link rel="shortcut icon" type="image/png" href="images/favicon.png">
+
+    <!-- @TODO : Add bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/vue/1.0.26/vue.min.js">
+
+    <!-- @TODO : Add fontawesome Icons -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- @TODO : Add local stylesheet -->
+    <script src="https://cdn.jsdelivr.net/vue/1.0.26/vue.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript"> </script>
+
+  </head>
+  <body>
+    <div id="app">
+      <header class="container">
+        <h1>BMI Calculator</h1>
+        <small>Write your height and height and click <em>calculate</em></small>
+      </header>
+      <main class="container">
+        <div class="form-horizontal">
+          <div class="col-xs-12 form-group">
+            <label for="weight" class="col-xs-4 control-label">weight <em>(in kg)</em></label>
+            <div class="col-xs-8"><input v-model="weight" id="weight" type="text" class="form-control"></div>
+          </div>
+          <div class="col-xs-12 form-group">
+            <label for="height" class="col-xs-4 control-label">height <em>(in cm)</em></label>
+            <div class="col-xs-8"><input v-model="height" id="height" type="text" class="form-control"></div>
+          </div>
+          <div class="form-group">
+            <button class="btn btn-success btn-block" @click="calculate">Calculate</button>
+          </div>
+        </div>
+        <div class="result">
+          <span>And the result is...</span>
+          <em>{{result}}</em>
+        </div>
+      </main>
+    </div>
+
+    <!-- @TODO : Add markup
+
+      Details;
+      1. Bootstrap cards (https://getbootstrap.com/docs/4.4/components/card/)
+      2. Font awesome icons (calculator,user-alt,baby-carriage,mars-double,arrows-alt-v,thumbs-up,weight,exchange-alt and broom)
+      3. Bootstrap buttons (https://getbootstrap.com/docs/4.4/components/buttons/)
+      4. Bootstrap form inputs (https://getbootstrap.com/docs/4.4/components/forms/)
+      5. Google Fonts (Merienda)
+      6. HTML5 Validation
+      7. Bootstrap Tooltips
+    -->
+
+
+
+    <!-- @TODO : Add jQuery -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+
+    <!-- @TODO : Add Popper js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+
+    <!-- @TODO : Add bootstrap js-->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <!-- @TODO : Add font awesome js-->
+  <script   src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js"> </script>
+
+    <!-- @TODO : Add VueJS(Development version) -->
+    <script src="https://cdn.jsdelivr.net/vue/1.0.26/vue.min.js"></script>
+
+
+    <!-- @TODO : Add your script file -->
+
+  </body>
+</html>
